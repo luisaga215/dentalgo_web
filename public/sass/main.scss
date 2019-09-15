@@ -23,8 +23,10 @@ $color-gray: #313131;
 }
 #icon_fb{
   display: inline-block;
-  transition: opacity .7s, top 1s;
+  transition: opacity .5s, top 1s, visibility .2s;
+  transition-timing-function: ease-in-out;
   opacity: 1;
+  visibility: visible;
   position: absolute;
   top: 0;
   right: 0;
@@ -32,7 +34,7 @@ $color-gray: #313131;
 }
 #icon_fb2{
   display: inline-block;
-  transition: opacity .2s, top .2s, visibility .2s;
+  transition: opacity .2s, top .2s, visibility .1s;
   opacity: 0;
   visibility: hidden;
   position: absolute;
@@ -58,6 +60,7 @@ $color-gray: #313131;
 }
 .icons_fb:hover #icon_fb{
   opacity: 0;
+  visibility: hidden;
   top: -4px;
 }
 .top_ubi,.top_mail{
