@@ -1,0 +1,72 @@
+$font-family-primary: 'Open Sans', sans-serif;
+
+$color-primary: #057478;
+$color-primary-light: #07a8ae;
+$color-secondary: white;
+$color-gray: #313131;
+
+.top_row{
+  margin-top: .8em;
+  border-bottom-style: solid;
+  border-bottom-color: $color-primary-light;
+  border-bottom-width: thin;
+}
+.icon_top{
+  width: 1em;
+  height:1em;
+  margin-left: 2em;
+  margin-right: .2em;
+  display: inline-block;
+}
+#icon_ubi{
+  margin-left: 6em;
+}
+#icon_fb{
+  display: inline-block;
+  transition: opacity .7s, top 1s;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+#icon_fb2{
+  display: inline-block;
+  transition: opacity .2s, top .2s, visibility .2s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.icons_fb{
+  display: inline-block;
+  position: relative;
+  margin-left: auto;
+  margin-right: 7em;
+  margin-bottom: .1em;
+  top: -5px;
+}
+.icons_fb:hover #icon_fb2{
+  opacity: 1;
+  visibility: visible;
+  top: -5px;
+}
+.icons_fb:hover #icon_fb{
+  opacity: 0;
+  top: -4px;
+}
+.top_ubi,.top_mail{
+  font-family: $font-family-primary;
+  font-size: .7em;
+  text-decoration: none;
+  display: inline-block;
+  color: $color-primary;
+}
+.top_mail:hover{
+    text-decoration: none;
+}
