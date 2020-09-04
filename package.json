@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/luisaga215/dentalgo_web#readme",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "express": "^4.17.1"
